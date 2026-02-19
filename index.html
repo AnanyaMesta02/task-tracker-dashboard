@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET ELEMENT BY ID</title>
+</head>
+<body>
+    <div>
+        <h2 id="first">THIS IS HEADING</h2>
+        <p>THIS IS PARAGRAPH</p>
+    </div>
+
+    <script>
+        let x = document.getElementById("first")
+        console.log(x)
+        console.log(x.innerText)
+        x.innerText = "javascript"
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET ELEMENT BY TAG NAME</title>
+</head>
+<body>
+    <div>
+        <h2>THIS IS HEADING</h2>
+        <p>THIS IS PARAGRAPH</p>
+    </div>
+
+    <div>
+        <h2>THIS IS HEADING 1</h2>
+        <p>THIS IS PARAGRAPH 1</p>
+    </div>
+
+    <script>
+        // Select all h2 elements
+        let x = document.getElementsByTagName("h2");
+
+        console.log(x); // shows HTMLCollection
+
+        // Access first h2
+        console.log(x[0].innerText);
+        x[0].innerText = "javascript";
+
+        // Access

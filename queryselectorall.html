@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY_SELECTOR_ALL</title>
+    <style>
+        body{
+            font-family: Arial, Helvitca, sans-serif; background-color: rgb(191, 217, 234);
+            justify-content: center;display: flex;align-items: center;}
+        
+        button{
+            padding:8px 15px;
+            margin-top: 10px;
+            cursor:pointer;
+            border-radius: 20%;
+        
+    </style>
+</head>
+<body>
+<center>
+    <div>
+        <h2>HEADING 1</h2>
+        <h2>HEADING 2</h2>
+        <p> PARAGRAPH 1</p>
+        <p> PARAGRAPH 2</p>
+    </div>
+    <hr>
+<button onclick="changecontent()">CHANGE ALL</button>
+<hr>
+</center>
+    <script>
+function changecontent()  {
+    let headings=document.querySelectorAll("h2")
+    let paragraphs=document.querySelectorAll("p")
+    headings.forEach(function(h){
+        h.innerText = "Heading Changed";
+        h.style.color = "red";});
+    paragraphs.forEach(function(p){
+        p.innerText = "Heading Changed";
+        p.style.color = "blue";});
+}  
+    </script>
+</body>
+</html>
